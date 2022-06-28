@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&family=Spline+Sans+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+main{
+    height: auto;
+    
+}
+
+body{
+    background-image: url(../img/patron3.jpg);
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.imagenDerecha{
+    padding-top:10px;
+}
+
+nav {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    text-decoration: none;
+    font-weight: 900;
+    top: 0;
+    left: 0;
+    font-size: 0.7rem;
+    grid-area: nav;
+    
+}
+
+.navegador{
+    width: auto;
+    text-align: center;
+    background-color: rgba(30, 30, 30, 0.7)!important;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+
+}
+
+nav ul li{
+    margin: 20px;
+}
+
+ul li:hover {
+    color: orangered ;
+    font-weight: 900;
+    
+
+}
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: orangered ;
+    font-weight: 900;
+    
+
+}
+
+.bordeRedondo{
+    border-radius: 10px;
+}
+
+.textoBlanco {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.bold{
+    font-weight: bold;
+}
+
+.fontImpact {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.imagenServicios {
+    background-color: grey;
+    border-radius: 50px;
+    border-top:inset 2px orangered;
+    border-right:inset 2px orangered;
+    border-left:inset 2px orangered;
+    border-bottom:inset 2px orangered;
+    height: 20%;
+    width: 20%;
+    
+    
+}
+
+footer {
+    background-color: rgba(30, 30, 30, 1);
+    color: rgb(129, 129, 129);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 10px;
+    grid-area: foot;
+
+}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+
+}
+.footer2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+footer a{
+    display: flex;    
+    padding: 5px;
+}
+
+footer a img{
+    width: 100%;
+    height: 30px;
+}
+
+footer a:hover{
+    padding-bottom: 20px;
+}
+
+
+
+
+.cajaServicios {
+    background-color: rgba(32, 41, 67,1);
+    border-radius: 100px;
+    border-top:inset 5px rgb(30, 30, 30, 1);
+    border-right:inset 5px orangered;
+    border-left:inset 5px rgb(30, 30, 30, 1);
+    border-bottom:inset 5px orangered;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 30px;
+    font-size: 1rem; 
+    height: 300px;
+    
+    
+}
+
+.textoCentrado {
+    text-align: center;
+}
+
+.fondoNegro {
+    background-color: rgb(30, 30, 30, 1);
+}
+
+.fondoAzul  {
+    background-color: rgba(32, 41, 67,1);
+}
+
+#navPrincipal{
+    grid-area: nav;
+}
+
+#banner{
+    grid-area: banner;
+}
+
+#cajaServicios{
+    grid-area: servicios;
+}
+#mapaDireccion{
+    grid-area: mapa;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5;
+    grid-template-areas:
+    "nav"
+    "servicios"
+    "banner"
+    "mapa"
+    "footer";
+}
+
+
+@media only screen and (min-width: 768px) {
+    nav{
+        font-size: 1rem;
+}
+
+    .cajaServicios{
+        margin: 110px;
+}
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+    section {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .cajaServicios{
+        margin: 20px;
+        width: 40%;
+        font-size: 1rem;
+    }
+
+    .footer1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer2{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav{
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.7rem;               
+    }
+
+    .cajaServicios{
+        width: 100%;
+        font-size: 1.5rem;
+        height: 400px;      
+    }
+    
+    nav a img{
+        height: 220px;
+        width: 100%;
+    }
+
+    .contenedor{
+        grid-template-columns: 70vw 30vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav"
+        "banner servicios"
+        "mapa mapa"
+        "footer footer";
+    }
+
+    #cajaServicios {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 500px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

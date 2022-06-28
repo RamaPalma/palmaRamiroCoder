@@ -1,0 +1,88 @@
+<!-- 
+    ctrl + k + c para comentar
+ctrl + k + u para descomentar
+en css es */ -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>RPA Seguridad /CAMARAS Y ALARMAS</title>
+    <!-- BODY -->
+    <body class="contenedor">
+        <!-- NAV -->
+        <nav class="navegador" id="navPrincipal">  
+            <a href="index.html" >
+                <img src="img/nav.png" alt="logo de empersa"  width="100%" height="80px">
+            </a>            
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="views/servicios.html" >SERVICIOS</a></li>
+                <li><a href="views/nosotros.html" >NOSOTROS</a></li>
+                <li><a href="views/contacto.html" >CONTACTO</a></li>
+                <li><a href="views/pagos.html" >FORMAS DE PAGO</a></li>
+            </ul>
+        </nav>
+
+        <!-- BANNER CON CARRUSEL DE FOTOS -->
+        <main id="banner">
+            <div>
+                <img src="img/banner.svg" alt="banner" width="100%" height="700px">
+            </div>
+        </main>
+
+        <!-- ESTA SECCION VA A CONTENER INFORMACION SOBRE LOS SERVICIOS CADA UNO MOSTRADO POR UNA DIV/BOX -->
+        <section id="cajaServicios">  
+            <div class="cajaServicios" >
+                <img src="img/soporte-tecnico.png"     alt="tecnico" class="imagenServicios">           
+                <h2 class="bold fontImpact textoBlanco">SERVICIOS COMPLETOS</h2>
+                <p class="font textoBlanco">Un instalador de camaras y alarmas profesional corobora el lugar de instalacion y todas las necesidades para esta</p>
+            </div>
+            <div class="cajaServicios">
+                <img src="img/reparacion.png" alt="imagen reparacion" class="imagenServicios">
+                <h2 class="bold fontImpact textoBlanco">MANTENIMIENTO Y REPARACION</h2>
+                <p class="font textoBlanco">Personal tecnico especializado disponible todos los dias del año</p>
+                
+            </div>
+            <div class="cajaServicios">
+                <img src="img/rendimiento.png" alt="imagen rendimiento" class="imagenServicios">
+                <h2 class="bold fontImpact textoBlanco">RENDIMIENTO GARANTIZADO</h2>
+                <p class="font textoBlanco">Asesoramiento para equipamiento y accesorios en base a necesidades y presupuesto</p>
+                
+            </div>
+        </section>
+        
+        <!-- ESTA PARTE MUESTRA UN MAPA DE GOOGLE CON LA DIRECCION DE LA EMPRESA -->
+        <aside id="mapaDireccion">
+            <div class="textoCentrado">
+                <h2 class="bold fontImpact fondoAzul textoBlanco bordeRedondo">DONDE ENCONTRARNOS</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.5518241374925!2d-58.40047248437985!3d-34.76688097365728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2ebe24788e3%3A0xabb879ab66cccd5b!2sAv.%20Meeks%20474%2C%20Lomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1655827665235!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+            </div>
+        </aside>
+        <!-- FOOTER  -->
+        <footer id="footer">
+            <div class="footer1">
+                <img src="img/logoCuadrado.png" alt="logo con letras" width="100" height="100">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolore aliquid tempora, esse quo earum et! Consequatur unde rerum maiores ipsa mollitia voluptatum non animi. Assumenda maxime accusantium temporibus excepturi!</p>
+            </div>
+
+            <div class="footer2">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="img/facebook.png" alt="logo facebook" width="100" height="100">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="img/instagram.png" alt="logo instagram" width="100" height="100">
+                </a>
+                <a href="https://web.whatsapp.com" target="_blank">
+                    <img src="img/whatsapp.png" alt="logo wpp" width="100" height="100">
+                </a>
+            </div>
+            
+        </footer>
+
+        
+    </body>
+    </html>

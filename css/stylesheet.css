@@ -58,6 +58,7 @@ nav ul li{
 ul li:hover {
     color: orangered ;
     font-weight: 900;
+    cursor: pointer;
     
 
 }
@@ -74,6 +75,33 @@ ul li a:hover {
     font-weight: 900;
     
 
+}
+
+.transform:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.skew:hover{
+    transform: skew(-10deg);
+    transition: transform 1s;
+    
+
+}
+
+@keyframes animateServicios{
+    0%{color: whitesmoke;}
+    25%{color: rgba(32, 41, 67,1);}
+    50%{color: orangered;}
+    100%{color:whitesmoke;}
+}
+
+.animateFont{
+    animation-name: animateServicios;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s;
 }
 
 .bordeRedondo{
@@ -152,9 +180,6 @@ footer a img{
     height: 30px;
 }
 
-footer a:hover{
-    padding-bottom: 20px;
-}
 
 
 
